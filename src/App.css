@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins" !important;
+  text-decoration: none;
+}
+
+.main {
+  background-color: #14161a;
+  color: white;
+  min-height: 100vh;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  background-color: white !important;
+  color: black;
+}
+
+.css-1vrqiqu-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  border: 1px solid white !important;
+}
+
+.banner__content {
+  height: 400;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.bannerContent {
+  height: 400;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25;
+  justify-content: space-around;
+}
+
+.banner {
+  background-image: url("https://raw.githubusercontent.com/piyush-eon/react-crypto-tracker/master/public/banner2.jpg");
+}
+
+.caroselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.row-item {
+  background-color: #14161a;
+  cursor: pointer;
+}
+
+.row-item:hover {
+  background-color: #131111;
+}
+
+.container {
+  display: flex;
+  width: 94%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.sideBar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-right: 2px solid grey; */
+}
+.marketData {
+  align-self: flex-start;
+  padding: 25;
+  padding-top: 10;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.marketData span {
+  margin-bottom: 13px;
+}
+
+.coinInfo-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
+.chartBtn {
+  background: transparent;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid gold;
+  transition: all 0.3s ease;
+}
+.sidebar-container {
+  width: 350px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 92%;
+}
+.watchlist {
+  flex: 1;
+  width: 100%;
+  background-color: grey;
+  border-radius: 10;
+  padding: 15;
+  padding-top: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12;
+  overflow-y: scroll;
+}
+
+.coinWatchlist {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eebc1d;
+  box-shadow: 0 0 3px black;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+  .sideBar {
+    width: 100%;
+    border: none;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .coinInfo-container {
+    width: 110%;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .chartBtn {
+    background: transparent;
+    border: none;
+    padding: 10px 13px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    transition: all 0.3s ease;
+  }
+}
